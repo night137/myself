@@ -1,0 +1,255 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    list-style: none;
+}
+@font-face{
+    font-family:fonta;
+    src:url(../fonts/STXINGKA.TTF);
+}
+/*顶部属性*/
+.o-head{
+    width:100%;
+    height:30px;
+    background:#5C5757;
+    overflow:hidden;
+    position:relative;
+}
+.o-head a{
+    color:#DAD3D3;
+    padding:15px;
+    line-height: 30px;
+    text-align: center;
+}
+.o-left{
+    float: left;
+    padding-left: 18%;
+}
+.o-right{
+    float: right;
+    padding-right:18%;
+}
+.menu{
+    display: none;
+}
+.o-right span{
+    background:url(../img/gwc.png) no-repeat;
+}
+.o-right span a{
+    padding-left:30px;
+}
+.o-head a:hover{
+    border-radius:15px;
+    background:#D5A9A9;
+    text-decoration:none;
+    transition: .5s;
+}
+.o-head a:visited{
+    color:#fff;
+}
+/*中间导航部分属性*/
+.content-head{
+    width:63%;
+    height:100px;
+    margin:0 auto;
+    font-size:1.8em;
+    line-height:100px;
+    position:relative;
+}
+.content-head ul {
+    margin-top:30px;
+    margin-left:-10px;
+}
+.content-head a{
+    padding-right:10px;
+    color:#313417;
+    text-align: center;
+    text-align: center;
+}
+.content-head li:hover{
+    background:#DE8484;
+    border-radius:10px;
+}
+.content-head a:hover{
+    border-radius:10px;
+    color:#EF7D09;
+    list-style:none;
+    transition:0.6s;
+}
+form{
+    position:absolute;
+    top:65px;
+    right:19%;
+    margin:0 auto;
+    width:300px;
+    z-index: 999;
+}
+input{
+    width: 100%;
+    height: 42px;
+    padding-left: 10px;
+    background: #FFFFFF;
+    outline:medium;
+    border: 1px solid #65D8E2;
+    border-radius: 5px;
+    color: #9E9C9C;
+}
+button{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border:1px solid #65D8E2;
+    background-color:#fff;
+    transition:0.4s;
+    z-index:0.1;
+}
+button:hover{
+    cursor:pointer;
+    background-color:#7EEDC8;
+}
+/*轮播部分属性*/
+.content-center{
+    width:63%;
+    margin:0 auto;
+}
+.carousel-inner{
+    height:450px;
+}
+.pic img{
+    width:100%;
+}
+.carousel-control:hover{
+    opacity: .9;
+    background:#CAADAD;
+}
+/*中间商品属性*/
+.content-footer{
+    width:63%;
+    margin:20px auto;
+    overflow:hidden;
+}
+.footer-text{
+    width:100%;
+    height:40px;
+    background:#A8CBBA;
+    text-align: center;
+    color:#3B3434;
+    font-family:
+}
+.footer-text p{
+    font-size:2.2em;
+    font-family:fonta;
+}
+.footer-img{
+    display: flex;
+    height:270px;
+}
+.footer-phone{
+    flex-grow:2;
+    overflow:hidden;
+    position:relative;
+    box-shadow:#41a8ff 0px 5px 5px;
+    text-align: center;
+    width:10%;
+    margin:5px;
+}
+.footer-phone a{
+    padding-top:10px;
+}
+.footer-a{
+    position:absolute;
+    bottom:-100px;
+    width:100%;
+    height:80px;
+    line-height:30px;
+    background:#83A2F9;
+    font-size:15px;
+    text-align:center;
+    transition:1s;
+    padding-top:10px;
+    opacity:.8;
+}
+.footer-a p,.footer-a a{
+    height:10px;
+    color:#274644;
+}
+.footer-a a{
+    color:#AC2B0A;
+}
+.footer-a a:hover{
+    text-decoration:none;
+}
+.footer-phone:hover{
+    top:-5px;
+    box-shadow:0 0 15px #A76227;
+}
+.footer-phone:hover .footer-a{
+    bottom:0;
+}
+/*尾部属性*/
+.o-footer{
+    width:100%;
+    text-align: center;
+    margin-top:10px;
+}
+.footer-top a{
+    color:#251F1F;
+}
+.footer-top a:hover{
+    color:#E81645;
+    text-decoration:none;
+}
+/*媒体查询 顶部*/
+@media (max-width:470px){
+    .carousel-inner{
+        margin-top:60px;
+    }
+}
+@media (max-width:700px){
+    .o-left{
+        margin-left:-18%;
+    }
+    .o-right{
+        margin-right:-17%;
+    }
+}
+/*媒体查询 轮播部分*/
+@media (max-width:835px){
+    .content-head{
+        margin-top:110px;
+    }
+    .menu{
+        display: block;
+        position:absolute;
+        top:100px;
+        left:100px;
+        cursor:pointer;
+    }
+    .menu img{
+        width:100%
+    }
+}
+/*媒体查询 商品部分*/
+@media (max-width:1370px){
+    .footer-img{
+        flex-direction: column;
+        height:100%;
+    }
+    .footer-phone{
+        width:100%;
+    }
+    form{
+        margin-top:35px;
+    }
+}
+/*媒体查询 轮播*/
+@media (max-width:2200px){
+    .carousel-inner{
+        height:20%;
+        margin-top:60px;
+    }
+}
